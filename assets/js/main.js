@@ -1,0 +1,4 @@
+const button=document.querySelector('.menu-toggle');
+const nav=document.querySelector('#mainNav');
+if(button&&nav){const closeMenu=()=>{nav.classList.remove('open');button.setAttribute('aria-expanded','false');document.body.classList.remove('menu-open')};button.addEventListener('click',()=>{const open=nav.classList.toggle('open');button.setAttribute('aria-expanded',String(open));document.body.classList.toggle('menu-open',open)});nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));document.addEventListener('keydown',event=>{if(event.key==='Escape'&&nav.classList.contains('open')){closeMenu();button.focus()}});window.addEventListener('resize',()=>{if(window.innerWidth>1040)closeMenu()})}
+document.querySelectorAll('[data-year]').forEach(node=>{node.textContent=String(new Date().getFullYear())});
