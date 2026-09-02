@@ -21,7 +21,7 @@ GitHub to publish the static files exactly as supplied.
 
 The old PHP mail handler has been replaced because GitHub Pages cannot run PHP.
 The first test submission will send an activation message from FormSubmit to
-`info@eu-fahrschule.online`. Open that message and confirm the form once. Then
+the configured recipient. Open that message and confirm the form once. Then
 submit the form again and verify that the enquiry arrives and redirects to the
 thank-you page.
 

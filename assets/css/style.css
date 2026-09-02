@@ -40,3 +40,20 @@
 @media(max-width:720px){.seo-detail-grid,.cluster-grid,.decision-steps{grid-template-columns:1fr}}
 :focus-visible{outline:3px solid rgba(23,105,170,.42);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+
+/* GitHub contact forms on every page */
+.contact-strip-inner{display:grid;grid-template-columns:minmax(0,.72fr) minmax(440px,1.28fr);align-items:center;gap:2rem}
+.contact-strip-form{background:#fff;border:1px solid rgba(6,31,53,.14);border-radius:12px;padding:1.15rem;box-shadow:0 16px 36px rgba(6,31,53,.12)}
+.contact-strip-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+.contact-strip-form label{display:grid;gap:.32rem;color:var(--navy);font-size:.82rem;font-weight:800}
+.contact-strip-form label.full{grid-column:1/-1}
+.contact-strip-form input,.contact-strip-form textarea{width:100%;border:1px solid #aebfca;border-radius:6px;padding:.72rem .78rem;background:#fff;color:var(--ink)}
+.contact-strip-form input:focus,.contact-strip-form textarea:focus{outline:3px solid rgba(23,105,170,.16);border-color:var(--blue)}
+.contact-strip-form textarea{resize:vertical;min-height:82px}
+.contact-strip-consent{display:flex!important;grid-template-columns:none!important;flex-direction:row;align-items:flex-start;gap:.55rem!important;margin:.75rem 0!important;font-size:.78rem!important;font-weight:600!important}
+.contact-strip-consent input{width:17px!important;min-width:17px;margin-top:.12rem}
+.contact-strip-consent a{text-decoration:underline;color:var(--blue)}
+.contact-strip-form .btn{width:100%}
+@media(max-width:900px){.contact-strip-inner{grid-template-columns:1fr}.contact-strip-form{width:100%}}
+@media(max-width:620px){.contact-strip-form-grid{grid-template-columns:1fr}.contact-strip-form label.full{grid-column:auto}.contact-strip-form{padding:1rem}.contact-strip{padding:2.2rem 0}}
