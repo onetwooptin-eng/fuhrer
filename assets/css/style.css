@@ -57,3 +57,12 @@
 .contact-strip-form .btn{width:100%}
 @media(max-width:900px){.contact-strip-inner{grid-template-columns:1fr}.contact-strip-form{width:100%}}
 @media(max-width:620px){.contact-strip-form-grid{grid-template-columns:1fr}.contact-strip-form label.full{grid-column:auto}.contact-strip-form{padding:1rem}.contact-strip{padding:2.2rem 0}}
+
+
+/* Floating WhatsApp contact button */
+.whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:1000;display:inline-flex;align-items:center;gap:.62rem;min-height:56px;padding:.72rem 1rem .72rem .82rem;border-radius:999px;background:#25D366;color:#fff!important;font-weight:850;font-size:.94rem;line-height:1;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.22);transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.whatsapp-float:hover{background:#1fbd5b;transform:translateY(-2px);box-shadow:0 16px 34px rgba(0,0,0,.28)}
+.whatsapp-float:focus-visible{outline:3px solid rgba(37,211,102,.38);outline-offset:4px}
+.whatsapp-float svg{width:30px;height:30px;display:block;flex:0 0 30px;fill:currentColor}
+@media(max-width:720px){.whatsapp-float{right:16px;bottom:16px;width:58px;height:58px;min-height:58px;padding:0;justify-content:center}.whatsapp-float span{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.whatsapp-float svg{width:31px;height:31px}}
+@supports(padding:max(0px)){.whatsapp-float{bottom:max(22px,env(safe-area-inset-bottom));right:max(22px,env(safe-area-inset-right))}@media(max-width:720px){.whatsapp-float{bottom:max(16px,env(safe-area-inset-bottom));right:max(16px,env(safe-area-inset-right))}}}
