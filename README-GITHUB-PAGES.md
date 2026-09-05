@@ -31,3 +31,10 @@ thank-you page.
 - Confirm that `robots.txt` and `sitemap.xml` open on the custom domain.
 - Resubmit `https://eu-fahrschule.online/sitemap.xml` in Google Search Console.
 - Keep the repository free of passwords, API keys, and server configuration.
+
+## V15 SEO release — 5 September 2026
+
+All 67 HTML pages and existing routes are preserved. The sitemap includes 65 indexable URLs. Upload package contents at the repository root, with CNAME and .nojekyll. Do not add an outer directory. Do not use this custom-domain package under a subdirectory.
+
+After deployment, check priority pages, robots.txt and sitemap.xml, inspect Google-selected canonicals in Search Console and review the separate SEO report. Verify an unknown URL returns HTTP 404. Preserve the original backup for rollback. The supplied report and keyword register are private handover documents, not public website content.
+

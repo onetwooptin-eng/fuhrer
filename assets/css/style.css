@@ -57,3 +57,9 @@
 .contact-strip-form .btn{width:100%}
 @media(max-width:900px){.contact-strip-inner{grid-template-columns:1fr}.contact-strip-form{width:100%}}
 @media(max-width:620px){.contact-strip-form-grid{grid-template-columns:1fr}.contact-strip-form label.full{grid-column:auto}.contact-strip-form{padding:1rem}.contact-strip{padding:2.2rem 0}}
+
+/* Long German headings and contextual navigation. */
+.hero-copy,.cluster-card,.article-body{min-width:0}
+.hero-copy h1,.cluster-card h3{overflow-wrap:anywhere;hyphens:auto}
+.breadcrumbs{flex-wrap:wrap}
+main p a{text-decoration:underline;text-underline-offset:.18em;color:var(--blue)}
