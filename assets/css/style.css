@@ -63,3 +63,9 @@
 .hero-copy h1,.cluster-card h3{overflow-wrap:anywhere;hyphens:auto}
 .breadcrumbs{flex-wrap:wrap}
 main p a{text-decoration:underline;text-underline-offset:.18em;color:var(--blue)}
+
+/* Persistent WhatsApp contact. */
+.whatsapp-float{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:calc(18px + env(safe-area-inset-bottom));z-index:90;display:flex;align-items:center;gap:10px;min-height:54px;padding:12px 18px;border-radius:30px;background:#08783f;color:#fff;font-size:15px;font-weight:750;line-height:1.25;box-shadow:0 5px 22px rgba(0,0,0,.2);text-decoration:none}
+.whatsapp-float svg{flex-shrink:0}.whatsapp-float small{display:block;font-size:12px;font-weight:500;margin-top:3px}.whatsapp-float:hover{background:#065d31}.whatsapp-float:focus-visible{outline:3px solid #082d4b;outline-offset:4px}.footer-bottom{padding-bottom:100px}
+@media(max-width:720px){.whatsapp-float{right:14px;padding:12px 16px}.whatsapp-float small{display:none}}
+body.menu-open .whatsapp-float{visibility:hidden}
