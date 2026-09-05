@@ -38,3 +38,7 @@ All 67 HTML pages and existing routes are preserved. The sitemap includes 65 ind
 
 After deployment, check priority pages, robots.txt and sitemap.xml, inspect Google-selected canonicals in Search Console and review the separate SEO report. Verify an unknown URL returns HTTP 404. Preserve the original backup for rollback. The supplied report and keyword register are private handover documents, not public website content.
 
+
+## V16 content and contact update
+
+Revised introductory content on 13 pages and rebuilt 66 footer enquiry forms. WhatsApp remains +49 163 2478574. Upload all files, including CSS, so the new form component renders correctly. Existing FormSubmit activation is still required; verify delivery through your own test after deployment. No submission was sent during local validation.
